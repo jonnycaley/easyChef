@@ -1,0 +1,166 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/layoutContainer"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="#bfbfbf"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:paddingBottom="1sp"
+        android:paddingRight="5sp"
+        >
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            app:srcCompat="@drawable/easychef"/>
+
+        <TextView
+            android:id="@+id/intro"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:background="@android:color/transparent"
+            android:ems="100"
+            android:gravity="center"
+            android:text="@string/welcome_to_easychef_your_favourite_cooking_companion_start_by_adding_your_ingredients_then_click_next"
+            android:textColor="#000000"
+            android:textSize="16sp" />
+
+        <Button
+            android:id="@+id/welcome_page_button"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="NEXT>>>" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="#dfdfdf"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="2"
+            android:background="#dfdfdf"
+            android:gravity="center"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:orientation="horizontal"
+                android:layout_height="wrap_content"
+                android:gravity="center">
+                <CheckBox
+                    android:id="@+id/checkBoxStarter"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="14sp"
+                    android:textStyle="bold"
+                    android:text="@string/starter"
+                    android:paddingRight="10dp"
+                    android:onClick="selectItem"/>
+                <CheckBox
+                    android:id="@+id/checkBoxMain"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="14sp"
+                    android:textStyle="bold"
+                    android:text="@string/main"
+                    android:paddingRight="10dp"
+                    android:onClick="selectItem"/>
+                <CheckBox
+                    android:id="@+id/checkBoxDesert"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="14sp"
+                    android:textStyle="bold"
+                    android:text="@string/dessert"
+                    android:onClick="selectItem"/>
+
+            </LinearLayout>
+
+            <EditText
+                android:id="@+id/ingredientName"
+                android:layout_width="fill_parent"
+                android:layout_height="0dp"
+                android:layout_weight="2"
+                android:gravity="center"
+                android:hint="@string/ingredient"
+                android:inputType="textPersonName"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/Quantity"
+                android:layout_width="fill_parent"
+                android:layout_height="0dp"
+                android:layout_weight="2"
+                android:gravity="center"
+                android:hint="@string/quantity"
+                android:inputType="phone"
+                android:textStyle="bold" />
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="0dp"
+                android:background="#dfdfdf"
+                android:orientation="horizontal"
+                android:layout_weight="2">
+                <TextView
+                    android:id="@+id/Meas"
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="2"
+                    android:background="@android:color/transparent"
+                    android:textStyle="bold"
+                    android:ems="100"
+                    android:gravity="end|center"
+                    android:text="@string/measurement"
+                    android:textColor="?android:textColorHint"
+                    android:textSize="20sp" />
+
+                <Spinner
+                    android:id="@+id/Measurements"
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:background="@android:drawable/btn_dropdown"
+                    android:spinnerMode="dropdown"
+                    android:dropDownWidth="wrap_content"/>
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/submitNewIngredient"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:background="@color/colorAccent"
+                android:text="Add Ingredient"
+                android:textColor="@android:color/white" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:background="#dfdfdf"
+            android:gravity="top"
+            android:orientation="vertical">
+            <ListView
+                android:id="@+id/IngredientsList"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:focusable="false"
+                android:background="#ffffff"/>
+
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="true"
+        jar="/Users/jonathancaley/Desktop/Uni Year 2/Mobile Apps/trying/app/build/intermediates/incremental-classes/debug/instant-run-bootstrap.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="19a01211453f1068f3ca82191b8e8cfd0f0b6630">
+        <dex dex="/Users/jonathancaley/Desktop/Uni Year 2/Mobile Apps/trying/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run-bootstrap_f05e1b6dda8fb7664d3313c55c44624afeba4ef4/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/jonathancaley/Desktop/Uni Year 2/Mobile Apps/trying/app/build/intermediates/incremental-runtime-classes/debug/instant-run.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="510aa6efc159983dfbffa676a0dae37568c0a46f">
+        <dex dex="/Users/jonathancaley/Desktop/Uni Year 2/Mobile Apps/trying/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run_b1bcf2149b4786c3549938cca5da658c0ad8c8c2/classes.dex" />
+    </item>
+
+</items>

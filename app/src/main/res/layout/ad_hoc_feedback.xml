@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:text="Please use the below fields to tell us more about your recent interaction. \n\nTap on one of the faces to represent how you feel, or on the bulb if you have an idea or suggestion."
+            android:textColor="@android:color/black"
+            android:textSize="25dp" />
+
+        <View
+            android:id="@+id/textView2"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@android:color/black"
+            android:layout_below="@+id/textView1"/>
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#ECECEC"
+            android:paddingBottom="7dp"
+            android:paddingLeft="18dp"
+            android:paddingTop="7dp"
+            android:text="Feedback type"
+            android:textColor="@android:color/black"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_below="@+id/textView2"/>
+
+
+        <LinearLayout
+            android:id="@+id/textView4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textView3"
+            android:orientation="horizontal"
+            android:gravity="center">
+
+            <ImageView
+                android:id="@+id/happy_feedback"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:src="@drawable/happy"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:paddingRight="5dp"/>
+
+            <ImageView
+                android:id="@+id/moderate_feedback"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:src="@drawable/neutral"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:paddingRight="5dp"/>
+
+            <ImageView
+                android:id="@+id/sad_feedback"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:src="@drawable/sad"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:paddingRight="5dp"/>
+
+            <ImageView
+                android:id="@+id/lightbulb_feedback"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:src="@drawable/idea"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"/>
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#ECECEC"
+            android:paddingBottom="7dp"
+            android:paddingLeft="18dp"
+            android:paddingTop="7dp"
+            android:text="Give us some more information"
+            android:textColor="@android:color/black"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_below="@+id/textView4"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:layout_margin="10dp"
+            android:orientation="vertical"
+            android:id="@+id/textView6"
+            android:layout_below="@+id/textView5">
+
+            <EditText
+                android:id="@+id/editText"
+                android:layout_width="match_parent"
+                android:layout_height="fill_parent"
+                android:background="@drawable/edit_text_corners"
+                android:ems="10"
+                android:hint="Ad hoc feedback information"
+                android:inputType="textPersonName"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:gravity="left|top"
+                android:textColorHint="#C8C8C8"
+                android:padding="10dp"/>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/textView7"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#ECECEC"
+            android:paddingBottom="7dp"
+            android:paddingLeft="18dp"
+            android:paddingTop="7dp"
+            android:text="Now tap submit"
+            android:textColor="@android:color/black"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_below="@+id/textView6"/>
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="24dp"
+            android:layout_marginBottom="12dp"
+            android:background="@drawable/button_corners"
+            android:text="Submit Feedback"
+            android:textAllCaps="false"
+            android:textColor="@android:color/white"
+            android:textSize="19dp"
+            android:layout_below="@+id/textView7"
+            android:layout_centerHorizontal="true" />
+
+        <View
+            android:id="@+id/textView8"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:paddingTop="20dp"
+            android:background="@android:color/black"
+            android:layout_below="@+id/button"/>
+    </RelativeLayout>
+</LinearLayout>

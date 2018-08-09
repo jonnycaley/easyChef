@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="5dp">
+
+    <TextView
+        android:id="@+id/editIngredientText"
+        android:gravity="center"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textSize="25sp"
+        android:textColor="@android:color/black"
+        android:textStyle="bold"
+        android:text="Edit Ingredient" />
+
+    <EditText
+        android:id="@+id/ingredientChanger"
+        android:paddingTop="10dp"
+        android:gravity="center|top"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:textStyle="bold"
+        android:hint="Ingredient"
+        android:text="CURRENT INGREDIENT NAME HERE"/>
+
+    <EditText
+        android:id="@+id/quantityChanger"
+        android:paddingTop="10dp"
+        android:gravity="center|top"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        android:hint="Quanitiy"
+        android:text="CURRENT INGREDIENT QUANTITY HERE"/>
+    <Spinner
+        android:id="@+id/Measurements"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@android:drawable/btn_dropdown"
+        android:spinnerMode="dropdown" />
+
+    <Button
+        android:id="@+id/editIngredient"
+        android:layout_margin="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/holo_blue_dark"
+        android:textColor="@android:color/white"
+        android:text="Edit Ingredient"
+        android:onClick="edit_update"/>
+    <Button
+        android:id="@+id/deleteIngredient"
+        android:layout_margin="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/holo_red_light"
+        android:textColor="@android:color/white"
+        android:text="Delete Ingredient" />
+</LinearLayout>
