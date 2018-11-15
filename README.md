@@ -1,5 +1,5 @@
 # easyChef
-Second year university module coursework: Mobile Application Development
+University module coursework: Mobile Application Development
 
 Result: 100%
 
